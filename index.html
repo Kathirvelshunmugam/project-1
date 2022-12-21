@@ -1,0 +1,72 @@
+var readLineSync = require('readline-sync');
+var questionOne = "Are you above 18 ";
+var choice = "yes";
+var ans = readLineSync.question(questionOne);
+console.log("you entered" + " " + ans);
+var score = 0;
+
+if (ans === choice) {
+  console.log("You can access");
+  score = score + 1;
+  console.log(score);
+}
+else {
+  console.log("Access Denied");
+  score = score - 0;
+  console.log(score)
+}
+console.log("----------------");
+
+var readLineSync = require('readline-sync');
+var questionTwo = "Are you from KA ";
+var choice = "yes";
+var ans = readLineSync.question(questionTwo);
+console.log("you entered" + " " + ans);
+
+
+if (ans === choice) {
+  console.log("Yes you are right");
+  score++;
+  console.log(score);
+}
+else {
+  console.log("No it's not");
+  score--;
+  console.log(score)
+}
+console.log("----------------");
+var readLineSync = require('readline-sync');
+var questionThree = "What is my favorite Colour ";
+var choice = 'Blue';
+var ans = readLineSync.question(questionThree);
+console.log("You Entered" + " " + ans);
+
+if (ans == choice) {
+  console.log("Wow,it's right!!");
+  score++;
+  console.log(score);
+}
+else {
+  console.log("Nah!, get to know me better");
+  score--
+  console.log(score);
+}
+console.log("----------------");
+
+var readLineSync = require('readline-sync');
+var questionFour = "Who I love the most? ";
+var choice = "SK";
+var ans = readLineSync.question(questionFour);
+console.log("You Entered" + " " + ans);
+
+if (ans == choice) {
+  console.log("Yes she is the one!!");
+  score++;
+  console.log(score);
+}
+else {
+  console.log("Don't come home, for your safety");
+  score--;
+  console.log(score);
+}
+console.log("----------------");
